@@ -295,6 +295,7 @@ namespace OpenSage.Logic.Object
                     {
                         modelInstance.BoneVisibilities[item.i] = false;
                     }
+
                 }
             }
             if (conditionState.ShowSubObject != null)
@@ -306,6 +307,7 @@ namespace OpenSage.Logic.Object
                     {
                         modelInstance.BoneVisibilities[item.i] = true;
                     }
+
                 }
             }
 
