@@ -31,7 +31,7 @@ namespace OpenSage.Mods.Bfme
         public string Identifier { get; } = "bfme";
 
         public IMainMenuSource MainMenu { get; } = new AptMainMenuSource("MainMenu.apt");
-        public IControlBarSource ControlBar { get; }
+        public IControlBarSource ControlBar { get; } = new AptControlBarSource();
         public IUnitOverlaySource UnitOverlay { get; } = new RadialUnitOverlaySource();
 
         public uint ScriptingTicksPerSecond => 5;

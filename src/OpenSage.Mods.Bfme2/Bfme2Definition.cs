@@ -5,6 +5,7 @@ using OpenSage.Gui;
 using OpenSage.Gui.Apt;
 using OpenSage.Gui.ControlBar;
 using OpenSage.Gui.UnitOverlay;
+using OpenSage.Mods.Bfme;
 using OpenSage.Mods.Bfme.Gui;
 
 namespace OpenSage.Mods.Bfme2
