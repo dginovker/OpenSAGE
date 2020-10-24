@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using OpenSage.Content;
 using OpenSage.Gui;
 using OpenSage.Gui.ControlBar;
 using OpenSage.Gui.UnitOverlay;
@@ -62,7 +61,7 @@ namespace OpenSage.Mods.Bfme.Gui
             var playerTemplate = selectedObject.Owner.Template;
             _visible = true;
 
-            var screenPosition = _game.Scene3D.Camera.WorldToScreenPoint(selectedObject.Collider.WorldBounds.Center);
+            var screenPosition = _game.Scene3D.Camera.WorldToScreenPoint(selectedObject.RoughCollider.WorldBounds.Center);
             _center = new Point2D((int)screenPosition.X, (int)screenPosition.Y);
 
             _commandSet = selectedObject.IsBeingConstructed() ? _gettingBuildCommandSet : selectedObject.Definition.CommandSet.Value;
